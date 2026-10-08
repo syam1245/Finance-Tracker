@@ -14,7 +14,6 @@ class AtomicFileStore(
     private val atomicFile = AtomicFile(file)
 
     override suspend fun read(): String? = withContext(ioDispatcher) {
-        if (!atomicFile.baseFile.exists()) return@withContext null
         try {
             atomicFile.openRead().use { it.bufferedReader().readText() }
         } catch (e: FileNotFoundException) {

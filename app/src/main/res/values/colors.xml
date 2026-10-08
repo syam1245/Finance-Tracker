@@ -2,4 +2,36 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#10B981</color>
+    <color name="primary_dark">#059669</color>
+    <color name="primary_light">#ECFDF5</color>
+    <color name="primary_variant">#047857</color>
+
+    <color name="accent">#3B82F6</color>
+    <color name="accent_dark">#2563EB</color>
+    <color name="accent_light">#EFF6FF</color>
+
+    <color name="danger">#F43F5E</color>
+    <color name="danger_dark">#E11D48</color>
+    <color name="danger_light">#FFF1F2</color>
+
+    <color name="warning">#F59E0B</color>
+    <color name="warning_dark">#D97706</color>
+    <color name="warning_light">#FFFBEB</color>
+
+    <color name="bg_main">#F0F4F8</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="card_border">#CBD5E1</color>
+    <color name="table_border">#E2E8F0</color>
+    <color name="table_header_bg">#F1F5F9</color>
+    <color name="table_row_alt">#F8FAFC</color>
+
+    <color name="text_main">#0F172A</color>
+    <color name="text_muted">#64748B</color>
+    <color name="text_label">#475569</color>
+    <color name="text_locked">#059669</color>
+
+    <color name="shop_badge_bg">#FFFFFF</color>
+    <color name="shop_badge_border">#CBD5E1</color>
 </resources>

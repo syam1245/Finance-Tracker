@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Curved / Pill Outlined Input Fields -->
+    <style name="Widget.SalesTracker.TextInputLayout.Curved" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">28dp</item>
+        <item name="boxCornerRadiusTopEnd">28dp</item>
+        <item name="boxCornerRadiusBottomStart">28dp</item>
+        <item name="boxCornerRadiusBottomEnd">28dp</item>
+        <item name="boxStrokeColor">@color/card_border</item>
+        <item name="boxBackgroundColor">#F8FAFC</item>
+        <item name="hintTextColor">@color/text_muted</item>
+    </style>
+
+    <!-- Curved Dropdown Input Fields -->
+    <style name="Widget.SalesTracker.TextInputLayout.Curved.Dropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxCornerRadiusTopStart">28dp</item>
+        <item name="boxCornerRadiusTopEnd">28dp</item>
+        <item name="boxCornerRadiusBottomStart">28dp</item>
+        <item name="boxCornerRadiusBottomEnd">28dp</item>
+        <item name="boxStrokeColor">@color/card_border</item>
+        <item name="boxBackgroundColor">#F8FAFC</item>
+        <item name="hintTextColor">@color/text_muted</item>
+    </style>
+
+    <!-- Curved Locked/Readonly Calculated Fields -->
+    <style name="Widget.SalesTracker.TextInputLayout.Curved.Locked" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">28dp</item>
+        <item name="boxCornerRadiusTopEnd">28dp</item>
+        <item name="boxCornerRadiusBottomStart">28dp</item>
+        <item name="boxCornerRadiusBottomEnd">28dp</item>
+        <item name="boxStrokeColor">#A7F3D0</item>
+        <item name="boxBackgroundColor">#ECFDF5</item>
+        <item name="hintTextColor">@color/primary_dark</item>
+    </style>
+
+    <!-- Curved Modern Tab Style -->
+    <style name="Widget.SalesTracker.TabLayout" parent="Widget.Material3.TabLayout">
+        <item name="tabBackground">@drawable/bg_tab_background</item>
+        <item name="tabIndicatorColor">@color/text_main</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabSelectedTextColor">@color/text_main</item>
+        <item name="tabTextColor">@color/text_muted</item>
+        <item name="tabRippleColor">@color/primary_light</item>
+        <item name="tabMinWidth">0dp</item>
+        <item name="tabPaddingStart">0dp</item>
+        <item name="tabPaddingEnd">0dp</item>
+        <item name="tabPaddingTop">0dp</item>
+        <item name="tabPaddingBottom">0dp</item>
+        <item name="tabInlineLabel">true</item>
+    </style>
+
+</resources>

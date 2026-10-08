@@ -1,3 +1,121 @@
 <resources>
-    <string name="app_name">Sales Tracker</string>
+    <string name="app_name">Sales Tracker Pro</string>
+
+    <!-- Navigation Tabs -->
+    <string name="tab_add_entry">Entry</string>
+    <string name="tab_view_data">Data</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- Section Labels -->
+    <string name="section_general_details">General Details</string>
+    <string name="section_units_volume">Units &amp; Volume</string>
+    <string name="section_finance_breakdown">Finance Breakdown</string>
+
+    <!-- Form Labels & Hints -->
+    <string name="label_entry_date">Entry Date</string>
+    <string name="label_shop_location">Shop List</string>
+    <string name="prompt_select_shop">Select a shop&#8230;</string>
+
+    <string name="label_cd_units">CD Units</string>
+    <string name="label_mobile_units">Mobile Units</string>
+    <string name="label_total_units_locked">Total Units (Locked)</string>
+
+    <string name="label_bajaj">Bajaj</string>
+    <string name="label_idfc">IDFC</string>
+    <string name="label_hdb">HDB</string>
+    <string name="label_tvs">TVS</string>
+    <string name="label_poonwala">Poonwala</string>
+    <string name="label_others">Others</string>
+    <string name="label_total_finance_locked">Total Finance (Locked)</string>
+
+    <string name="hint_zero">0</string>
+
+    <!-- Action Buttons -->
+    <string name="btn_commit_entry">Save Entry</string>
+    <string name="btn_update_entry">Update Entry</string>
+    <string name="btn_cancel_edit">Cancel Edit</string>
+    <string name="btn_export_csv">Export CSV</string>
+    <string name="btn_import_csv">Import CSV</string>
+    <string name="btn_wipe_records">Wipe Records</string>
+
+    <!-- Table & Filters -->
+    <string name="label_filter_by_store">Filter by Shop:</string>
+    <string name="filter_all_stores">All Shops</string>
+    <string name="label_filter_by_date_range">Filter by Date</string>
+    <string name="action_clear_date_range">Clear Date Range</string>
+    <string name="label_date_range_picker_title">Select Date Range</string>
+    <string name="empty_records_message">No data entries recorded.</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_wipe_title">Wipe Records</string>
+    <string name="dialog_wipe_message">WARNING: Are you absolutely sure you want to purge ALL stored local data? This action is irreversible.</string>
+    <string name="dialog_delete_title">Delete Entry</string>
+    <string name="dialog_delete_message">Are you sure you want to delete this specific record?</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_wipe">Wipe All</string>
+
+    <!-- Notifications / Toasts -->
+    <string name="toast_req_fields">Date and Shop are required fields.</string>
+    <string name="toast_record_committed">Data Saved Successfully</string>
+    <string name="toast_record_updated">Record updated successfully!</string>
+
+    <!-- Table Columns -->
+    <string name="col_actions">Actions</string>
+    <string name="col_date">Date</string>
+    <string name="col_shop">Shop Name</string>
+    <string name="col_cd">CD</string>
+    <string name="col_mobile">Mobile</string>
+    <string name="col_total_count">Total Count</string>
+    <string name="col_bajaj">Bajaj</string>
+    <string name="col_idfc">IDFC</string>
+    <string name="col_hdb">HDB</string>
+    <string name="col_tvs">TVS</string>
+    <string name="col_poonwala">Poonwala</string>
+    <string name="col_others">Others</string>
+    <string name="col_total_finance">Total Finance</string>
+
+    <!-- Settings Screen -->
+    <string name="title_settings">Settings &amp; Customization</string>
+    <string name="subtitle_settings">Customize shop list, finance options, and manage records</string>
+    <string name="section_shop_list">Shop List</string>
+    <string name="desc_shop_list">Manage shop names shown in dropdowns and filters</string>
+    <string name="btn_add_shop">Add Shop</string>
+    <string name="dialog_add_shop_title">Add Shop to List</string>
+    <string name="dialog_edit_shop_title">Rename Shop</string>
+    <string name="hint_shop_name">Shop Name</string>
+
+    <string name="section_finance_options">Finance Options</string>
+    <string name="desc_finance_options">Add, rename, or remove finance breakdown options</string>
+    <string name="btn_add_finance_option">Add Finance Option</string>
+    <string name="dialog_add_finance_title">Add Finance Option</string>
+    <string name="dialog_edit_finance_title">Rename Finance Option</string>
+    <string name="hint_finance_name">Finance Partner Name</string>
+
+    <string name="section_data_management">Data Management</string>
+    <string name="desc_data_management">Export or import CSV datasets, or purge records</string>
+
+    <string name="section_storage_info">Storage Information</string>
+    <string name="storage_info_details">Files stored in: Documents/SalesTracker\n• Data: sales_data.json\n• Settings: app_settings.json</string>
+    <string name="btn_reset_defaults">Reset to Defaults</string>
+    <string name="dialog_reset_defaults_title">Reset Settings to Defaults</string>
+    <string name="dialog_reset_defaults_message">This will restore the original default shop list and finance options. Your sales data will NOT be deleted. Proceed?</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_add">Add</string>
+    <string name="action_rename">Rename</string>
+
+    <string name="toast_min_one_shop">At least one shop is required in the shop list.</string>
+    <string name="toast_min_one_finance">At least one finance option is required.</string>
+    <string name="toast_shop_added">Shop added successfully!</string>
+    <string name="toast_shop_removed">Shop removed.</string>
+    <string name="toast_shop_renamed">Shop renamed successfully!</string>
+    <string name="toast_finance_added">Finance option added!</string>
+    <string name="toast_finance_removed">Finance option removed.</string>
+    <string name="toast_finance_renamed">Finance option renamed successfully!</string>
+    <string name="toast_settings_reset">Settings restored to defaults.</string>
+
+    <string name="dialog_delete_shop_message">Are you sure you want to remove \"%1$s\" from the shop list?</string>
+    <string name="dialog_delete_finance_message">Are you sure you want to remove \"%1$s\" from finance options?</string>
 </resources>

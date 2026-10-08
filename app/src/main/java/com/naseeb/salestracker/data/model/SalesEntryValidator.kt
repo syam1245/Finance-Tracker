@@ -10,7 +10,7 @@ object SalesEntryValidator {
 
     data class ValidationError(val field: String, val code: Code)
 
-    fun validate(entry: SalesEntry): List<ValidationError> {
+    fun validate(entry: SalesEntry, knownShops: List<String> = Shops.ALL): List<ValidationError> {
         val errors = mutableListOf<ValidationError>()
 
         try {
@@ -19,20 +19,20 @@ object SalesEntryValidator {
             errors.add(ValidationError("date", Code.INVALID_DATE))
         }
 
-        if (entry.shop !in Shops.ALL) {
+        if (entry.shop.isBlank()) {
+            errors.add(ValidationError("shop", Code.UNKNOWN_SHOP))
+        } else if (knownShops.isNotEmpty() && !knownShops.any { it.equals(entry.shop, ignoreCase = true) }) {
             errors.add(ValidationError("shop", Code.UNKNOWN_SHOP))
         }
 
-        val counts = listOf(
+        val counts = mutableListOf(
             "cd" to entry.cd,
-            "mobile" to entry.mobile,
-            "bajaj" to entry.bajaj,
-            "idfc" to entry.idfc,
-            "hdb" to entry.hdb,
-            "tvs" to entry.tvs,
-            "poonwala" to entry.poonwala,
-            "others" to entry.others
+            "mobile" to entry.mobile
         )
+
+        for ((field, value) in entry.getResolvedFinances()) {
+            counts.add(field to value)
+        }
 
         for ((field, count) in counts) {
             if (count < 0) {
